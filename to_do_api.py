@@ -56,7 +56,7 @@ def update_todo(id:int, update_todo: Todo):
 def delete_todo(id:int):
     for index,todo in enumerate(todos):
         if todo.id == id:
-            todo.pop(index)
+            todos.pop(index)
             return {
                 "message": "successfully deleted"}
     return {"message": "todo not found"}
